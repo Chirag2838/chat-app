@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Chat App</title>
+	<title>Chat Now</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+	<link href="/style.css" rel="stylesheet" />
 </head>
 <body>
-	<div>
-		<p>This is a Chat App</p>
+	<div id="mario-chat">
+		<h2>My Chat</h2>
+		<div id="chat-window">
+			<div id="output"></div>
+			<div id="feedback"></div>
+		</div>
+		<input id="handle" type="text" placeholder="Name" >
+		<input id="message" type="text" placeholder="Message" >
+		<button id="send">Send</button>
 	</div>
 </body>
 </html>
